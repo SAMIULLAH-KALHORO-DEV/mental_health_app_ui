@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:mental_health_app_ui/home.dart';
 import 'package:mental_health_app_ui/screen1.dart';
+import 'package:mental_health_app_ui/shedule.dart';
 
 void main(List<String> args) {
   runApp(MyApp());

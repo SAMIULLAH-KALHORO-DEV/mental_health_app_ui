@@ -7,6 +7,8 @@ class Screen1 extends StatelessWidget {
     fontWeight: FontWeight.bold,
     fontSize: 20,
   );
+  final peragraphfontstyle = TextStyle(
+      color: Colors.black54, fontWeight: FontWeight.bold, letterSpacing: 0.2);
   List tList = [
     "bad mood",
     "insomnia",
@@ -49,11 +51,11 @@ class Screen1 extends StatelessWidget {
             SizedBox(height: 20),
             Row(children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(30),
-                child: Icon(
-                  CupertinoIcons.person_alt_circle,
-                  size: 100,
-                ),
+                borderRadius: BorderRadius.circular(40),
+                child: Image(
+                    fit: BoxFit.fill,
+                    height: 80,
+                    image: AssetImage("assets/images.jpeg")),
               ),
               SizedBox(width: 10),
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -116,6 +118,82 @@ class Screen1 extends StatelessWidget {
                 Text("Medicine"),
                 Text("Diagnoses"),
               ],
+            ),
+            SizedBox(height: 20),
+            Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                  color: Color(0xFFF8F8F8),
+                  borderRadius: BorderRadius.circular(10)),
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("General", style: tStyle),
+                  SizedBox(height: 20),
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("First name", style: peragraphfontstyle),
+                        Text(
+                          "Tom",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        )
+                      ]),
+                  Divider(),
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("last name", style: peragraphfontstyle),
+                        Text(
+                          "Stuart",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        )
+                      ]),
+                  Divider(),
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Date of Birth", style: peragraphfontstyle),
+                        Text(
+                          "07 June 1995",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        )
+                      ]),
+                  Divider(),
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Gender", style: peragraphfontstyle),
+                        Text(
+                          "Male",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        )
+                      ]),
+                  Divider(),
+                ],
+              ),
+            ),
+            SizedBox(height: 10),
+            Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                  color: Color(0xFFF8F8F8),
+                  borderRadius: BorderRadius.circular(10)),
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Additional", style: tStyle),
+                    SizedBox(height: 10),
+                    Text("Therapist Notes:", style: peragraphfontstyle),
+                    SizedBox(height: 10),
+                    Text(
+                      "Tom showed all nine symtoms of major depression for at least two weeks: depressed mood, weight loss, insomnia, restlessness, loss of engery, extreme guilt, all other symptoms of major depression for at least two weeks",
+                      style: peragraphfontstyle,
+                    )
+                  ]),
             )
           ],
         ),
