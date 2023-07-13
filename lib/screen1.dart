@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class Screen1 extends StatelessWidget {
   Screen1({super.key});
   final tStyle = TextStyle(
