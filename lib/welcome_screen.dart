@@ -36,20 +36,20 @@ class Home extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Color(0xC9FFFFFF),
-              ),
-              height: 60,
-              width: 200,
-              child: Center(child: Text("Get started")),
-            ),
-            Image(
-                fit: BoxFit.fill,
-                height: 250,
-                width: MediaQuery.of(context).size.width,
-                image: AssetImage("assets/design.png"))
+            // Container(
+            //   decoration: BoxDecoration(
+            //     borderRadius: BorderRadius.circular(10),
+            //     color: Color(0xC9FFFFFF),
+            //   ),
+            //   height: 60,
+            //   width: 200,
+            //   child: Center(child: Text("Get started")),
+            // ),
+            // Image(
+            //     fit: BoxFit.fill,
+            //     height: 250,
+            //     width: MediaQuery.of(context).size.width,
+            //     image: AssetImage("assets/design.png"))
           ],
         ),
       ),
