@@ -137,7 +137,7 @@ class Screen1 extends StatelessWidget {
                       children: [
                         Text("First name", style: peragraphfontstyle),
                         Text(
-                          "Tom",
+                          "kashif",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         )
                       ]),
